@@ -1,0 +1,32 @@
+<template>
+  <ul>
+    <li>{{ works }}</li>
+    <li>{{ blog }}</li>
+    <li>{{ contact }}</li>
+  </ul>
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+      works: 'Works',
+      blog: 'Blog',
+      contact: 'Contact',
+    };
+  },
+};
+</script>
+
+<style scoped>
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+ul li {
+  margin-right: 24px;
+}
+</style>
