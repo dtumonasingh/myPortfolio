@@ -1,0 +1,42 @@
+p {
+    padding:0px;
+}
+.mp-body {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 80%;
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+  
+  .featured-works {
+    margin: 0 auto;
+    width: 80%;
+  }
+  
+  .mp-intro {
+    width: 506px;
+  }
+  img#profile-photo {
+    height: 243px;
+    width: 243px;
+  }
+  button {
+    height: 47px;
+    width: 208px;
+    background-color: #ff6464;
+    border: none;
+    border-radius: 2px;
+  
+    color: white;
+  }
+  .main-text {
+    font-weight: bold;
+    font-size: 44px;
+  }
+
+  .work-list {
+      display: flex;
+      flex-direction: column;
+  }

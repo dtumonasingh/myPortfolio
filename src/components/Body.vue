@@ -8,7 +8,7 @@
     </div>
 
     <div class="mp-profile">
-      <img src="../assets/dp.png" />
+      <img id="profile-photo" src="../assets/dp.png" />
       <!-- <img src="assets/Ellipse2.png" /> -->
     </div>
   </div>
@@ -50,39 +50,6 @@ export default {
 };
 </script>
 
-<style scoped>
-.mp-body {
-  display: flex;
-  justify-content: space-around;
-  margin: 0 auto;
-  width: 80%;
-  padding-bottom: 50px;
-  padding-top: 50px;
-}
-
-.featured-works {
-  margin: 0 auto;
-  width: 80%;
-}
-
-.mp-intro {
-  width: 506px;
-}
-img {
-  height: 243px;
-  width: 243px;
-}
-button {
-  height: 47px;
-  width: 208px;
-  background-color: #ff6464;
-  border: none;
-  border-radius: 2px;
-
-  color: white;
-}
-.main-text {
-  font-weight: bold;
-  font-size: 44px;
-}
+<style lang="css" scoped>
+@import '../styles/_body.css';
 </style>

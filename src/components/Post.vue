@@ -37,39 +37,6 @@ export default {
 };
 </script>
 
-<style scoped>
-div #post {
-  width: 418px;
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
-  margin-left: 25px;
-  margin-right: 25px;
-}
-
-.post-content {
-  margin: 15px;
-}
-.title {
-  font-weight: bold;
-  font-size: 26px;
-}
-
-.meta-data {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  font-size: 18px;
-}
-
-.tags {
-  display: flex;
-  flex-direction: row;
-}
-
-.content {
-  font-size: 16px;
-}
+<style lang="css" scoped>
+@import '../styles/_post.css';
 </style>

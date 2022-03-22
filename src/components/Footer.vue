@@ -17,27 +17,6 @@
 export default {};
 </script>
 
-<style scoped>
-#socials {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-}
-img {
-  margin: 0px 20px 0px 20px;
-}
-
-#footer {
-  margin-top: 40px;
-  margin-bottom: 40px;
-  display: flex;
-  flex-direction: column;
-}
-
-#copyright {
-  font-size: 14px;
-  display: flex;
-  justify-content: center;
-  margin: 10px 0px 10px 0px;
-}
+<style lang="css" scoped>
+@import '../styles/_footer.css';
 </style>

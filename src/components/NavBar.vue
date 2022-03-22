@@ -18,15 +18,6 @@ export default {
 };
 </script>
 
-<style scoped>
-ul {
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-}
-
-ul li {
-  margin-right: 24px;
-}
+<style lang="css" scoped>
+@import '../styles/_nav-bar.css';
 </style>

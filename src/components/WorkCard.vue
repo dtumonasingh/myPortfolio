@@ -34,61 +34,6 @@
 export default {};
 </script>
 
-<style scoped>
-p {
-  margin: 0;
-  padding: 0;
-}
-
-#image {
-  align-items: center;
-  display: flex;
-}
-#work-card {
-  display: flex;
-  align-content: center;
-  margin: 10px 0px 10px 0px;
-}
-
-#title {
-  font-weight: bold;
-  font-size: 30px;
-}
-
-#data {
-  margin-left: 20px;
-  justify-content: space-around;
-}
-
-#year {
-  background-color: black;
-  font-size: 16px;
-  color: white;
-  width: 60px;
-  border-radius: 20px;
-  padding: 0px;
-  margin: 0px;
-  display: flex;
-  justify-content: center;
-}
-
-#tag-name {
-  font-weight: 100;
-  font-size: 20;
-  margin-left: 20px;
-}
-
-#data {
-  display: flex;
-  flex-direction: column;
-}
-
-#meta-data {
-  display: flex;
-}
-
-#content {
-  font-size: 16px;
-  font-weight: 200px;
-}
+<style lang="css" scoped>
+@import "../styles/_work-card.css";
 </style>
