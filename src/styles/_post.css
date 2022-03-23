@@ -1,0 +1,44 @@
+div #post {
+  width: 48%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+
+.post-content {
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 26px;
+  margin: 10px 0px 10px 0px;
+}
+
+.meta-data {
+  display: flex;
+  flex-direction: row;
+  font-size: 18px;
+  margin: 10px 0px 10px 0px;
+}
+
+.meta-data p {
+  margin-right: 10px;
+}
+
+.tags {
+  display: flex;
+  flex-direction: row;
+}
+.tags p {
+  margin: 0px 5px 0px 5px;
+}
+
+.content {
+  font-size: 16px;
+  margin: 10px 0px 10px 0px;
+}

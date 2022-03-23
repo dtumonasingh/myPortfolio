@@ -1,0 +1,8 @@
+div#post-container {
+  width: 100%;
+  background-color: #edf7fa;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+}
