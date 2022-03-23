@@ -1,34 +1,44 @@
 div #post {
-    width: 418px;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    margin-left: 25px;
-    margin-right: 25px;
-  }
-  
-  .post-content {
-    margin: 15px;
-  }
-  .title {
-    font-weight: bold;
-    font-size: 26px;
-  }
-  
-  .meta-data {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    font-size: 18px;
-  }
-  
-  .tags {
-    display: flex;
-    flex-direction: row;
-  }
-  
-  .content {
-    font-size: 16px;
-  }
+  width: 48%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+
+.post-content {
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 26px;
+  margin: 10px 0px 10px 0px;
+}
+
+.meta-data {
+  display: flex;
+  flex-direction: row;
+  font-size: 18px;
+  margin: 10px 0px 10px 0px;
+}
+
+.meta-data p {
+  margin-right: 10px;
+}
+
+.tags {
+  display: flex;
+  flex-direction: row;
+}
+.tags p {
+  margin: 0px 5px 0px 5px;
+}
+
+.content {
+  font-size: 16px;
+  margin: 10px 0px 10px 0px;
+}

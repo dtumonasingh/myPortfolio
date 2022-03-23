@@ -7,6 +7,8 @@
 
       <div class="meta-data">
         <p>{{ date }}</p>
+        <p>|</p>
+
         <div class="tags">
           <p v-for="item in tags" :key="item">
             {{ item }}

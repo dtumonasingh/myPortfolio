@@ -1,10 +1,10 @@
 <template>
   <div class="mp-body">
     <div class="mp-intro">
-      <p class="main-text">{{ SalutationText }}</p>
-      <p>{{ Description }}</p>
+      <p id="main-text">{{ SalutationText }}</p>
+      <p id="description">{{ Description }}</p>
 
-      <button>{{ downloadButton }}</button>
+      <button id="download-resume-button">{{ downloadButton }}</button>
     </div>
 
     <div class="mp-profile">
@@ -13,17 +13,23 @@
     </div>
   </div>
   <post-container>
-    <post-component> </post-component>
-    <post-component></post-component>
+    <div id="posts-header">
+    <p>Recent posts</p>
+    <a>view all</a>
+    </div>
+    <div id="posts">
+      <post-component> </post-component>
+      <post-component></post-component>
+    </div>
   </post-container>
 
   <div class="featured-works">
-    <p>Featured Works</p>
+    <p id="feature-works-header">Featured Works</p>
     <div class="work-list">
       <work-card> </work-card>
-
+      <hr />
       <work-card> </work-card>
-
+      <hr />
       <work-card> </work-card>
     </div>
   </div>
