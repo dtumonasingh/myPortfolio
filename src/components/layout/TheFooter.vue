@@ -18,5 +18,5 @@ export default {};
 </script>
 
 <style lang="css" scoped>
-@import '../../styles/_footer.css';
+@import '../../styles/components/layout/_the-footer.css';
 </style>

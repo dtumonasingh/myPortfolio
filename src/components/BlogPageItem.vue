@@ -43,7 +43,6 @@ export default {
 </script>
 
 <style lang="css" scoped>
-@import "../styles/_post-container.css";
-@import '../styles/_post.css';
+@import "../styles/components/_blogpage-item.css";
 </style>
 

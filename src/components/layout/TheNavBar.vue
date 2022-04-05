@@ -19,5 +19,5 @@ export default {
 </script>
 
 <style lang="css" scoped>
-@import '../../styles/_nav-bar.css';
+@import '../../styles/components/layout/_the-navbar.css';
 </style>

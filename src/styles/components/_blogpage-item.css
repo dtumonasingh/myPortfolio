@@ -1,3 +1,11 @@
+div#post-container {
+  width: 100%;
+  background-color: #edf7fa;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+}
 div #post {
   width: 48%;
   background-color: white;
@@ -42,3 +50,4 @@ div #post {
   font-size: 16px;
   margin: 10px 0px 10px 0px;
 }
+

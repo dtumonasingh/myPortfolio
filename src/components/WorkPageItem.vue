@@ -35,5 +35,5 @@ export default {};
 </script>
 
 <style lang="css" scoped>
-@import "../styles/_work-card.css";
+@import "../styles/components/_workpage-item.css";
 </style>

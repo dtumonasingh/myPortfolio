@@ -53,5 +53,5 @@ export default {
 </script>
 
 <style lang="css" scoped>
-@import '../styles/_body.css';
+@import '../styles/pages/_home-page.css';
 </style>
