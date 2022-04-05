@@ -1,5 +1,6 @@
 <template>
-  <div id="post">
+  <div id="post-container">
+      <div id="post">
     <div class="post-content">
       <div class="title">
         <p>{{ title }}</p>
@@ -23,11 +24,12 @@
       </div>
     </div>
   </div>
+  </div>
 </template>
 
 <script>
 export default {
-  data() {
+    data() {
     return {
       title: 'Making a design system from scratch',
       date: '12 Feb 2020',
@@ -36,9 +38,12 @@ export default {
         'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.',
     };
   },
+
 };
 </script>
 
 <style lang="css" scoped>
+@import "../styles/_post-container.css";
 @import '../styles/_post.css';
 </style>
+

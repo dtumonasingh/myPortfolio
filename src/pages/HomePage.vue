@@ -8,48 +8,44 @@
     </div>
 
     <div class="mp-profile">
-      <img id="profile-photo" src="../assets/dp.png" />
+      <img id="profile-photo" src="@/assets/dp.png" />
       <!-- <img src="assets/Ellipse2.png" /> -->
     </div>
   </div>
-  <post-container>
     <div id="posts-header">
     <p>Recent posts</p>
     <a>view all</a>
     </div>
     <div id="posts">
-      <post-component> </post-component>
-      <post-component></post-component>
+      <blogpage-item> </blogpage-item>
+      <blogpage-item></blogpage-item>
     </div>
-  </post-container>
 
   <div class="featured-works">
     <p id="feature-works-header">Featured Works</p>
     <div class="work-list">
-      <work-card> </work-card>
+      <workpage-item> </workpage-item>
       <hr />
-      <work-card> </work-card>
+      <workpage-item> </workpage-item>
       <hr />
-      <work-card> </work-card>
+      <workpage-item> </workpage-item>
     </div>
   </div>
 </template>
 
 <script>
-import PostContainer from './PostContainer.vue';
-import Post from './Post.vue';
-import WorkCard from './WorkCard.vue';
+import BlogPageItem from '@/components/BlogPageItem.vue';
+import WorkPageItem from '@/components/WorkPageItem.vue';
 
 export default {
   components: {
-    PostContainer,
-    'post-component': Post,
-    'work-card': WorkCard,
+    'blogpage-item': BlogPageItem,
+    'workpage-item': WorkPageItem,
   },
   data() {
     return {
-      SalutationText: `Hi, I am John, Creative Technologist`,
-      Description: `Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.`,
+      SalutationText: `Hi, I am Mona, Frontend Developer`,
+      Description: `I like to develop brilliant UI designs using VueJS`,
       downloadButton: `Download Resume`,
     };
   },
