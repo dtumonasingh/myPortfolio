@@ -1,29 +1,29 @@
 <template>
-  <div id="post-container">
-      <div id="post">
-    <div class="post-content">
-      <div class="title">
+  <div class="blog">
+
+      <div class="blog__title">
         <p>{{ title }}</p>
       </div>
 
-      <div class="meta-data">
-        <p>{{ date }}</p>
-        <p>|</p>
+      <div class="blog__meta-data">
 
-        <div class="tags">
-          <p v-for="item in tags" :key="item">
+        <p class="blog__date">{{ date }}</p>
+        <p class="blog__divider">|</p>
+
+        <div class="blog__tags">
+          <p class="blog__tag-name" v-for="item in tags" :key="item">
             {{ item }}
           </p>
         </div>
+
       </div>
 
-      <div class="content">
+      <div class="blog__content">
         <p>
           {{ content }}
         </p>
       </div>
-    </div>
-  </div>
+
   </div>
 </template>
 
@@ -42,7 +42,7 @@ export default {
 };
 </script>
 
-<style lang="css" scoped>
-@import "../styles/components/_blogpage-item.css";
+<style lang="scss" scoped>
+@import "../styles/components/_blogpage-item.scss";
 </style>
 

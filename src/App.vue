@@ -1,9 +1,9 @@
 <template>
-  <main>
+  <div class="main">
     <the-navbar> </the-navbar>
       <router-view></router-view>
     <the-footer> </the-footer>
-  </main>
+  </div>
 </template>
 
 <script>
@@ -17,4 +17,8 @@ export default {
    },
 };
 </script>
+
+<style lang="scss">
+@import './styles/common.scss';
+</style>
 

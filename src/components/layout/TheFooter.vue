@@ -1,15 +1,18 @@
 <template>
-  <div id="footer">
-    <div id="socials">
-      <img src="@/assets/fb.png" />
+  <div class="footer">
 
-      <img src="@/assets/insta.png" />
+    <div class="footer__socials">
+      <img class="footer__icon" src="@/assets/fb.png" />
 
-      <img src="@/assets/Linkedin.png" />
+      <img class="footer__icon" src="@/assets/insta.png" />
+
+      <img class="footer__icon" src="@/assets/Linkedin.png" />
     </div>
-    <div id="copyright">
-      <p>Copyright ©2020 All rights reserved</p>
+
+    <div class="footer__copyright">
+      <p class="footer__message"> Copyright ©2020 All rights reserved </p>
     </div>
+
   </div>
 </template>
 
@@ -17,6 +20,6 @@
 export default {};
 </script>
 
-<style lang="css" scoped>
-@import '../../styles/components/layout/_the-footer.css';
+<style lang="scss" scoped>
+@import '../../styles/components/layout/_the-footer.scss';
 </style>

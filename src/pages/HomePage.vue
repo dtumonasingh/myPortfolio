@@ -1,34 +1,37 @@
 <template>
-  <div class="mp-body">
-    <div class="mp-intro">
-      <p id="main-text">{{ SalutationText }}</p>
-      <p id="description">{{ Description }}</p>
+  <div class="portfolio">
+    <div class="portfolio__intro">
+      <p class="portfolio__salutation">{{ SalutationText }}</p>
+      <p class="portfolio__description">{{ Description }}</p>
 
-      <button id="download-resume-button">{{ downloadButton }}</button>
+      <button class="porfolio__download-resume">{{ downloadButton }}</button>
     </div>
 
-    <div class="mp-profile">
-      <img id="profile-photo" src="@/assets/dp.png" />
-      <!-- <img src="assets/Ellipse2.png" /> -->
+    <div class="portfolio__display-picture">
+      <img class="portfolio__image" src="@/assets/dp.png" />
     </div>
   </div>
-    <div id="posts-header">
-    <p>Recent posts</p>
-    <a>view all</a>
+
+  <div class="featured-blogs">
+    <div class="featured-blogs__header">
+      <p class="featured-blogs__recent-posts">Recent posts</p>
+      <a class="featured-blogs__view-all"> View all </a>
     </div>
-    <div id="posts">
-      <blogpage-item> </blogpage-item>
-      <blogpage-item></blogpage-item>
+    <div class="featured-blogs__list">
+        <blogpage-item> </blogpage-item>
+        <blogpage-item></blogpage-item>
     </div>
+  </div>
 
   <div class="featured-works">
-    <p id="feature-works-header">Featured Works</p>
-    <div class="work-list">
+    <p class="featured-works__header">Featured Works</p>
+    <div class="featured-works__list">
       <workpage-item> </workpage-item>
-      <hr />
+      <div class="separator"></div>
       <workpage-item> </workpage-item>
-      <hr />
+      <div class="separator"></div>
       <workpage-item> </workpage-item>
+      <div class="separator"></div>
     </div>
   </div>
 </template>
@@ -52,6 +55,6 @@ export default {
 };
 </script>
 
-<style lang="css" scoped>
-@import '../styles/pages/_home-page.css';
+<style lang="scss" scoped>
+@import '../styles/pages/_home-page.scss';
 </style>

@@ -1,8 +1,12 @@
 <template>
-  <div>
-    <router-link to="/work"> {{ work }} </router-link>
-    <router-link to="/blog"> {{ blog }} </router-link>
-    <router-link to="/contact"> {{ contact }} </router-link>
+  <div class="navbar">
+    <div class="navbar__container">
+      <router-link class="navbar__item" to="/work"> {{ work }} </router-link>
+      <router-link class="navbar__item" to="/blog"> {{ blog }} </router-link>
+      <router-link class="navbar__item" to="/contact">
+        {{ contact }}
+      </router-link>
+    </div>
   </div>
 </template>
 
@@ -18,6 +22,6 @@ export default {
 };
 </script>
 
-<style lang="css" scoped>
-@import '../../styles/components/layout/_the-navbar.css';
+<style lang="scss" scoped>
+@import '../../styles/components/layout/_the-navbar.scss';
 </style>

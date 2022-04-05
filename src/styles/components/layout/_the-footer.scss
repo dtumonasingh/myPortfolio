@@ -1,0 +1,23 @@
+.footer {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__socials {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.footer__icon {
+  margin: 0px 20px 0px 20px;
+}
+
+.footer__copyright {
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  margin: 15px 0px 15px 0px;
+}

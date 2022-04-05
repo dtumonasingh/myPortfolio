@@ -1,33 +1,32 @@
-p {
-  margin: 0;
-  padding: 0;
-}
-
-#image {
-  align-items: center;
-  display: flex;
-}
-
-img {
-  padding: 0px;
-}
-#work-card {
+.work {
   display: flex;
   align-content: center;
   margin: 10px 0px 10px 0px;
 }
 
-#title {
-  font-weight: bold;
-  font-size: 30px;
+.work__image {
+  align-items: center;
+  display: flex;
+  padding: 0px;
 }
 
-#data {
+.work__data {
   margin-left: 20px;
   justify-content: space-around;
+  display: flex;
+  flex-direction: column;
 }
 
-#year {
+.work__title {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.work__meta-data {
+  display: flex;
+}
+
+.work__year {
   background-color: black;
   font-size: 16px;
   color: white;
@@ -37,24 +36,16 @@ img {
   margin: 0px;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
-#tag-name {
+.work__tag-name {
   font-weight: 100;
-  font-size: 20;
+  font-size: 20px;
   margin-left: 20px;
 }
 
-#data {
-  display: flex;
-  flex-direction: column;
-}
-
-#meta-data {
-  display: flex;
-}
-
-#content {
+.work__content {
   font-size: 16px;
   font-weight: 200px;
 }

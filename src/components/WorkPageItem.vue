@@ -1,25 +1,25 @@
 <template>
-  <div id="work-card">
-    <div id="image">
+  <div class="work">
+    <div class="work__image">
       <img src="../assets/image1.png" />
     </div>
 
-    <div id="data">
-      <div id="title">
+    <div class="work__data">
+      <div class="work__title">
         <p>Designing Dashboards</p>
       </div>
 
-      <div id="meta-data">
-        <div id="year">
+      <div class="work__meta-data">
+        <div class="work__year">
           <p>2020</p>
         </div>
 
-        <div id="tag-name">
+        <div class="work__tag-name">
           <p>Dashboard</p>
         </div>
       </div>
 
-      <div id="content">
+      <div class="work__content">
         <p>
           Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
           sint. Velit officia consequat duis enim velit mollit. Exercitation
@@ -34,6 +34,6 @@
 export default {};
 </script>
 
-<style lang="css" scoped>
-@import "../styles/components/_workpage-item.css";
+<style lang="scss" scoped>
+@import "../styles/components/_workpage-item.scss";
 </style>
