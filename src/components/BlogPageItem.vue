@@ -1,5 +1,5 @@
 <template>
-  <div class="blog">
+  <a target="_blank" href="https://blog.singhmona.in/what-are-storybooks-and-why-should-everyone-use-it" class="blog">
 
       <div class="blog__title">
         <p>{{ title }}</p>
@@ -24,7 +24,7 @@
         </p>
       </div>
 
-  </div>
+  </a>
 </template>
 
 <script>

@@ -15,9 +15,14 @@
   margin: 0px 20px 0px 20px;
 }
 
-.footer__copyright {
+.footer__created-by {
   font-size: 14px;
   display: flex;
   justify-content: center;
   margin: 15px 0px 15px 0px;
+}
+
+.footer__name {
+  color: #00A8CC;
+  font-weight: 600;
 }

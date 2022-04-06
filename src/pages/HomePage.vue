@@ -15,11 +15,11 @@
   <div class="featured-blogs">
     <div class="featured-blogs__header">
       <p class="featured-blogs__recent-posts">Recent posts</p>
-      <a class="featured-blogs__view-all"> View all </a>
+      <a class="featured-blogs__view-all" target="_blank" href="https://blog.singhmona.in/"> View all </a>
     </div>
     <div class="featured-blogs__list">
         <blogpage-item> </blogpage-item>
-        <blogpage-item></blogpage-item>
+        <blogpage-item> </blogpage-item>
     </div>
   </div>
 

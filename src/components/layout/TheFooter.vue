@@ -9,8 +9,8 @@
       <img class="footer__icon" src="@/assets/Linkedin.png" />
     </div>
 
-    <div class="footer__copyright">
-      <p class="footer__message"> Copyright ©2020 All rights reserved </p>
+    <div class="footer__created-by">
+      <p class="footer__message"> created by  <span class="footer__name">Mona Singh</span> </p>
     </div>
 
   </div>

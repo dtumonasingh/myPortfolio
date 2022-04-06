@@ -32,6 +32,10 @@
   font-size: 15px;
   font-weight: 500;
   line-height: 29px;
+
+  &:hover {
+    background-color: #fa4c4c;
+  }
 }
 
 .portfolio__image {
@@ -67,6 +71,11 @@
   color: #00A8CC;
   font-size: 16px;
   font-weight: 400;
+  text-decoration: none;
+
+  &:hover{
+    font-weight: 600;
+  }
 }
 
 .featured-blogs__list {
