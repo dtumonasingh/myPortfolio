@@ -1,12 +1,17 @@
 <template>
   <div class="footer">
 
-    <div class="footer__socials">
-      <img class="footer__icon" src="@/assets/fb.png" />
+    <div class="footer__socials">      
 
-      <img class="footer__icon" src="@/assets/insta.png" />
+      <a href="https://github.com/dtumonasingh" target="_blank" class="footer-socials__github-icon"><img class="footer__icon" src="@/assets/fb.png" /></a>
 
-      <img class="footer__icon" src="@/assets/Linkedin.png" />
+       <a href="https://www.linkedin.com/in/mona-singh-582a7a89/" target="_blank" class="footer-socials__linkedin-icon"><img class="footer__icon" src="@/assets/Linkedin.png" /></a>
+
+      <a href="https://stackoverflow.com/users/6268582/mona-singh" target="_blank" class="footer-socials__stackoverflow-icon"><img class="footer__icon" src="@/assets/insta.png" /></a>
+
+     
+
+      
     </div>
 
     <div class="footer__created-by">

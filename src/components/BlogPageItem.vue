@@ -1,8 +1,8 @@
 <template>
-  <a target="_blank" href="https://blog.singhmona.in/what-are-storybooks-and-why-should-everyone-use-it" class="blog">
+  <div class="blog">
 
       <div class="blog__title">
-        <p>{{ title }}</p>
+        <p>{{ blog.title }}</p>
       </div>
 
       <div class="blog__meta-data">
@@ -20,22 +20,27 @@
 
       <div class="blog__content">
         <p>
-          {{ content }}
+          {{ blog.brief }}
         </p>
       </div>
 
-  </a>
+  </div>
 </template>
 
 <script>
 export default {
+  props:{
+    blog: Object,
+  },
+  computed:{
+    date() {
+      var date = new Date(this.blog.dateAdded);
+      return date.toDateString();
+    }
+  },
     data() {
     return {
-      title: 'Making a design system from scratch',
-      date: '12 Feb 2020',
       tags: ['Design', 'Pattern'],
-      content:
-        'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.',
     };
   },
 
