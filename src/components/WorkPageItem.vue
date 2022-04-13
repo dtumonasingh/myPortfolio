@@ -1,7 +1,7 @@
 <template>
   <div class="work">
     <div class="work__image">
-      <img src="../assets/image1.png" />
+      <img src="../assets/image1.jpeg" />
     </div>
 
     <div class="work__data">

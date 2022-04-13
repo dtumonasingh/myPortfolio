@@ -25,8 +25,9 @@
         View all
       </a>
     </div>
-    <div v-for="blog in blogs" :key="blog.title" class="featured-blogs__list">
-      <blogpage-item :blog="blog"> </blogpage-item>
+    <div class="featured-blogs__list">
+      <blogpage-item :blog="firstBlog"> </blogpage-item>
+       <blogpage-item :blog="secondBlog"> </blogpage-item>
     </div>
   </div>
 
@@ -79,7 +80,9 @@ export default {
         'content-type': 'application/json',
       })
       .then((response) => {
-        this.blogs = response.data.data.user.publication.posts;
+        debugger;
+        this.firstBlog = response.data.data.user.publication.posts[0];
+        this.secondBlog = response.data.data.user.publication.posts[1];
         console.log(this.blogs);
       });
   },
@@ -91,7 +94,8 @@ export default {
       SalutationText: `Hi, I am Mona, Frontend Developer`,
       Description: `I like to develop brilliant UI designs using VueJS`,
       downloadButton: `Download Resume`,
-      blogs: {},
+      firstBlog: {},
+      secondBlog: {}
     };
   },
 };
