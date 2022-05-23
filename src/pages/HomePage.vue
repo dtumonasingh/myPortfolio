@@ -34,11 +34,9 @@
   <div class="featured-works">
     <p class="featured-works__header">Featured Works</p>
     <div class="featured-works__list">
-      <workpage-item> </workpage-item>
+      <workpage-item :title="title1" :year="year1" :tagName="tagName1" :content="content1" :imageSource="imageSource1"> </workpage-item>
       <div class="separator"></div>
-      <workpage-item> </workpage-item>
-      <div class="separator"></div>
-      <workpage-item> </workpage-item>
+      <workpage-item :title="title2" :year="year2" :tagName="tagName2" :content="content2" :imageSource="imageSource2"> </workpage-item>
       <div class="separator"></div>
     </div>
   </div>
@@ -80,7 +78,6 @@ export default {
         'content-type': 'application/json',
       })
       .then((response) => {
-        debugger;
         this.firstBlog = response.data.data.user.publication.posts[0];
         this.secondBlog = response.data.data.user.publication.posts[1];
         console.log(this.blogs);
@@ -91,6 +88,16 @@ export default {
   },
   data() {
     return {
+      title1:'Hightlight',
+      tagName1:'Vuejs Javascript',
+      year1: '2022',
+      content1: 'This is a small CRUD app for Blogs where you can also highlight the words and later view the highlighted words.',
+      imageSource1: 'image1',
+      title2:'SideBar',
+      tagName2:'Vuejs CSS Javascript',
+      year2: '2022',
+      content2: 'A sidebar which has two states, one is collapsed state where only icons are visible, the other is expanded state, where we can see the name of the option present too',
+      imageSource2: 'sidebar',
       SalutationText: `Hi, I am Mona, Frontend Developer`,
       Description: `I like to develop brilliant UI designs using VueJS`,
       downloadButton: `Download Resume`,

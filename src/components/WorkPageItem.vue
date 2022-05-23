@@ -1,29 +1,27 @@
 <template>
   <div class="work">
     <div class="work__image">
-      <img src="../assets/image1.jpeg" />
+      <img src="../assets/sidebar.png" />
     </div>
 
     <div class="work__data">
       <div class="work__title">
-        <p>Designing Dashboards</p>
+        <p>{{title}}</p>
       </div>
 
       <div class="work__meta-data">
         <div class="work__year">
-          <p>2020</p>
+          <p>{{year}}</p>
         </div>
 
         <div class="work__tag-name">
-          <p>Dashboard</p>
+          <p>{{tagName}}</p>
         </div>
       </div>
 
       <div class="work__content">
         <p>
-          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-          sint. Velit officia consequat duis enim velit mollit. Exercitation
-          veniam consequat sunt nostrud amet.
+          {{content}}
         </p>
       </div>
     </div>
@@ -31,7 +29,26 @@
 </template>
 
 <script>
-export default {};
+export default {
+  props: {
+    title: String,
+    year: String,
+    tagName: String,
+    content: String,
+    imageSource: String
+  },
+  methods: {
+    getImgUrl(imageSource) {
+    if(imageSource == 'sidebar')
+    {
+      return "../assets/sidebar.png";
+    }
+    else{
+      return "../assets/sidebar.png";
+    }
+  }
+  }
+};
 </script>
 
 <style lang="scss" scoped>
