@@ -27,16 +27,32 @@
     </div>
     <div class="featured-blogs__list">
       <blogpage-item :blog="firstBlog"> </blogpage-item>
-       <blogpage-item :blog="secondBlog"> </blogpage-item>
+      <blogpage-item :blog="secondBlog"> </blogpage-item>
     </div>
   </div>
 
   <div class="featured-works">
     <p class="featured-works__header">Featured Works</p>
     <div class="featured-works__list">
-      <workpage-item :title="title1" :year="year1" :tagName="tagName1" :content="content1" :imageSource="imageSource1" :workLink="workLink1"> </workpage-item>
+      <workpage-item
+        :title="work1.title"
+        :year="work1.year"
+        :tagName="work1.tagName"
+        :content="work1.content"
+        :imageSource="work1.imageSource"
+        :workLink="work1.workLink"
+      >
+      </workpage-item>
       <div class="separator"></div>
-      <workpage-item :title="title2" :year="year2" :tagName="tagName2" :content="content2" :imageSource="imageSource2" :workLink="workLink2"> </workpage-item>
+      <workpage-item
+        :title="work2.title"
+        :year="work2.year"
+        :tagName="work2.tagName"
+        :content="work2.content"
+        :imageSource="work2.imageSource"
+        :workLink="work2.workLink"
+      >
+      </workpage-item>
       <div class="separator"></div>
     </div>
   </div>
@@ -45,6 +61,7 @@
 <script>
 import BlogPageItem from '@/components/BlogPageItem.vue';
 import WorkPageItem from '@/components/WorkPageItem.vue';
+import workJson from '../assets/work.json';
 
 import axios from 'axios';
 
@@ -88,23 +105,26 @@ export default {
   },
   data() {
     return {
-      title1:'Hightlight',
-      tagName1:'Vuejs Javascript',
-      year1: '2022',
-      content1: 'A small CRUD app for Blogs where you can also highlight the words and later view the highlighted words in a different section. The technology used is VueJS.',
-      imageSource1: 'image1',
-      workLink1: "https://sensehawk-assignment.singhmona.in/blogs",
-      title2:'SideBar',
-      tagName2:'Vuejs CSS Javascript',
-      year2: '2022',
-      content2: 'A sidebar which has two states, one is collapsed state where only icons are visible, the other is expanded state, where we can see the name of the option present too. The technology used is vanilla javascript and CSS',
-      imageSource2: 'sidebar',
-      workLink2:"https://sidebar.onrender.com/",
+      work1: {
+        title: workJson.data[0].title,
+        tagName: workJson.data[0].tagName,
+        year: workJson.data[0].year,
+        content: workJson.data[0].content,
+        imageSource: workJson.data[0].imageSource,
+        workLink: workJson.data[0].workLink,
+      },
+      work2: {
+        title: workJson.data[1].title,
+        tagName: workJson.data[1].tagName,
+        year: workJson.data[1].year,
+        content: workJson.data[1].content,
+        workLink: workJson.data[1].workLink,
+      },
       SalutationText: `Hi, I am Mona, Frontend Developer`,
       Description: `I like to develop brilliant UI designs using VueJS`,
       downloadButton: `Download Resume`,
       firstBlog: {},
-      secondBlog: {}
+      secondBlog: {},
     };
   },
 };

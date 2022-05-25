@@ -1,0 +1,46 @@
+.work-page {
+    margin: 70px 100px 100px 100px;
+  .work-page__title {
+    width: 156px;
+    height: 69px;
+    left: 235px;
+    top: 160px;
+
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    /* or 136% */
+
+    /* Dark Color */
+
+    color: #21243d;
+  }
+
+  .featured-works {
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-top: 20px;
+    width: 900px;
+  }
+
+  .featured-works__header {
+    padding: 10px 0px 10px 0px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+  }
+
+  .featured-works__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  
+.separator {
+    border-bottom: solid 1px #ccc;
+    margin: 15px 0px 15px 0px;
+    width: 100%;
+  }
+}
