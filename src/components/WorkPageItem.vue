@@ -7,6 +7,7 @@
     <div class="work__data">
       <div class="work__title">
         <p>{{title}}</p>
+        <a class="work__link" :href="workLink" target="_blank">visit</a>
       </div>
 
       <div class="work__meta-data">
@@ -35,7 +36,8 @@ export default {
     year: String,
     tagName: String,
     content: String,
-    imageSource: String
+    imageSource: String,
+    workLink: String
   },
   methods: {
     getImgUrl(imageSource) {

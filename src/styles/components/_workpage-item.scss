@@ -9,7 +9,7 @@
   display: flex;
   padding: 0px;
   height: 260px;
-  width: 375px;
+  width: auto;
 }
 
 .work__data {
@@ -50,4 +50,8 @@
 .work__content {
   font-size: 16px;
   font-weight: 200px;
+}
+
+.work__link {
+  font-size: 15px;
 }

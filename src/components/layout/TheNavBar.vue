@@ -1,11 +1,9 @@
 <template>
   <div class="navbar">
     <div class="navbar__container">
+      <router-link class="navbar__item" to="/"> {{ home }} </router-link>
       <router-link class="navbar__item" to="/work"> {{ work }} </router-link>
       <a class="navbar__item" target="_blank" href="https://blog.singhmona.in/"> {{ blog }} </a>
-      <router-link class="navbar__item" to="/contact">
-        {{ contact }}
-      </router-link>
     </div>
   </div>
 </template>
@@ -14,9 +12,9 @@
 export default {
   data() {
     return {
+      home:'Home',
       work: 'Work',
       blog: 'Blog',
-      contact: 'Contact',
     };
   },
 };
