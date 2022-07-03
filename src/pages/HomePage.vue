@@ -4,9 +4,9 @@
       <p class="portfolio__salutation">{{ SalutationText }}</p>
       <p class="portfolio__description">{{ Description }}</p>
 
-      <a href="@/assets/MonaSinghResume.pdf`" download="download">
+      <!-- <a href="@/assets/MonaSinghResume.pdf`" download="download">
         <button class="porfolio__download-resume">{{ downloadButton }}</button>
-      </a>
+      </a> -->
     </div>
 
     <div class="portfolio__display-picture">
