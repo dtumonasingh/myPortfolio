@@ -1,9 +1,35 @@
+:root {
+  --clr-primary-300: #545343;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
 p {
-  padding: 0px;
-  margin: 0px;
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
 }
 
 .main {
   font-family: Heebo;
+  font-size: 1.3125rem;
+  line-height: 1.6;
+}
+
+.text-align {
+  text-align: center;
 }
 

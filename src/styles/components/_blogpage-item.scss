@@ -6,10 +6,12 @@
   align-content: center;
   justify-content: space-around;
   padding: 20px;
-  width: 44%;
   color: black; 
-  height: 250px; 
+  width: fit-content;
+  height: fit-content;
+  margin-bottom: 20px;
 }
+
 
 .blog__title {
   font-weight: bold;
